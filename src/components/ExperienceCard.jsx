@@ -16,6 +16,7 @@ import { Fade } from "react-reveal";
 
 const ExperienceCard = ({ data }) => {
   const [colorArrays, setColorArrays] = useState([]);
+  console.log(colorArrays);
   const imgRef = createRef();
 
   function getColorArrays() {
@@ -23,11 +24,11 @@ const ExperienceCard = ({ data }) => {
     setColorArrays(colorThief.getColor(imgRef.current));
   }
 
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
-  }
+  // function rgb(values) {
+  //   return typeof values === "undefined"
+  //     ? null
+  //     : "rgb(" + values.join(", ") + ")";
+  // }
 
   return (
     <Col lg="4">

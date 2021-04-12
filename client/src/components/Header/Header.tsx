@@ -6,6 +6,8 @@ import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import pic from "../../assets/ProfilePic.jpeg";
+import Dot from "../Dot/Dot";
+
 const avatar = pic;
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -30,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 12,
   },
 }));
-
 const Header: React.FC = () => {
   const classes = useStyles();
 
@@ -46,7 +47,6 @@ const Header: React.FC = () => {
       <Typography className={classes.title} variant="h4">
         <Typed strings={["Fakhreddine Messaoudi"]} typeSpeed={40} />
       </Typography>
-
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[

@@ -1,6 +1,24 @@
-/* body {
-  background-color: #333;
-} */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 2%;
+  background: red;
+}
 .contianer {
   display: block;
   margin: 2%;

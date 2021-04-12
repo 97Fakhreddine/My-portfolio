@@ -5,12 +5,12 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
-const avatar =
-  "https://images.pexels.com/photos/38275/anonymous-studio-figure-photography-facial-mask-38275.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+import pic from "../../assets/ProfilePic.jpeg";
+const avatar = pic;
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(55),
+    height: theme.spacing(55),
     margin: theme.spacing(1),
   },
   title: {
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "translate(-50%,-50%)",
     width: "100vw",
     textAlign: "center",
-    zIndex: 1,
+    zIndex: 12,
   },
 }));
 

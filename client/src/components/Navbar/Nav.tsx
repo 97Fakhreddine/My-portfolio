@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./nav.css";
-import logo from "../../assets/animal-2028258_960_720.webp";
+
 const Nav: React.FC = () => {
   const [github] = useState<string>("https://github.com/97Fakhreddine");
   const goToGithub = () => {

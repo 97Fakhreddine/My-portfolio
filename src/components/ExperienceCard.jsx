@@ -17,17 +17,17 @@ import { Fade } from "react-reveal";
 const ExperienceCard = ({ data }) => {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
-
+console.log(colorArrays)
   function getColorArrays() {
     const colorThief = new ColorThief();
     setColorArrays(colorThief.getColor(imgRef.current));
   }
 
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
-  }
+//   function rgb(values) {
+//     return typeof values === "undefined"
+//       ? null
+//       : "rgb(" + values.join(", ") + ")";
+//   }
 
   return (
     <Col lg="4">

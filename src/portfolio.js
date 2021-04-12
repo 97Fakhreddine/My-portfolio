@@ -4,7 +4,7 @@ export const greetings = {
   name: "Fakhreddine_Messaoudi",
   title: "Hi all, I'm Fakhreddine Messaoudi",
   description:
-    "A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
+    "Hello world! I am Fakhreddine Messaoudi from Tunisia and I am currently Graduated as a Full stack JS developer from RBK, a Coding RebootKamp powered by Hack Reactor. I create content in design and development using different libraries and frameworks such as React, Vue.js, Node.js, Nest.js, etc.I have a background in Civil Engineering so I enjoy working with Autocad and Autodesk Robot. When I am not developing, you can find me learning things on YouTube, writing articles .., watching series. But most of my days are spent working on projects",
   resumeLink:
     "https://www.linkedin.com/in/97Fakhreddine/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACz1L2MBrjZ0PpSsnrw7MiDcBZ-hwMtGU50,1635453773709)/",
 };

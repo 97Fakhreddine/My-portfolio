@@ -1,12 +1,16 @@
-.navbar {
-  font-size: 5rem;
-  color: white;
-  background-color: none;
-  overflow: scroll;
-}
 .github {
   cursor: pointer;
   color: white;
+}
+.collapse {
+  margin: auto;
+  color: aliceblue;
+}
+.navbar {
+  padding: 0px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  height: 10rem;
 }
 .facebook {
   cursor: pointer;
@@ -17,7 +21,7 @@
   color: white;
 }
 .logo {
-  width: 16.6rem;
+  width: 8.6rem;
 }
 
 @media screen and (min-width: 320px) and (max-width: 900px) {
@@ -31,8 +35,5 @@
   }
   .collapse {
     margin-top: 2%;
-  }
-  .navbar {
-    font-size: 2rem;
   }
 }

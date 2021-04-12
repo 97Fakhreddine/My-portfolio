@@ -1,0 +1,38 @@
+.navbar {
+  font-size: 5rem;
+  color: white;
+  background-color: none;
+  overflow: scroll;
+}
+.github {
+  cursor: pointer;
+  color: white;
+}
+.facebook {
+  cursor: pointer;
+  color: white;
+}
+.linkedin {
+  cursor: pointer;
+  color: white;
+}
+.logo {
+  width: 16.6rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
+  .logo {
+    width: 5rem;
+    float: left;
+  }
+  .d-flex {
+    float: right;
+    margin-top: -3rem;
+  }
+  .collapse {
+    margin-top: 2%;
+  }
+  .navbar {
+    font-size: 2rem;
+  }
+}

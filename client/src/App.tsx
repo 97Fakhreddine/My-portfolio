@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import "./app.css";
 import Nav from "./components/Navbar/Nav";
 import Carrousel from "./components/carrousel/Carrousel";
 import Project from "./components/Projects/Projects";
@@ -12,7 +13,7 @@ const App: React.FC<{}> = () => {
         <Carrousel />
       </div>
       <br />
-      <div>
+      <div className="contianer">
         <Project />
       </div>
     </div>

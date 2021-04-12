@@ -1,5 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import "./nav.css";
+import logo from "../../assets/animal-2028258_960_720.webp";
 const Nav: React.FC = () => {
+  const [github] = useState<string>("https://github.com/97Fakhreddine");
+  const goToGithub = () => {
+    window.open(github, "__blank");
+  };
+  const [facebook] = useState<string>(
+    "https://www.facebook.com/Fakhri.Shaarawy/"
+  );
+  const goToFacebook = () => {
+    window.open(facebook, "__blank");
+  };
+  const [linkedin] = useState<string>(
+    "https://www.linkedin.com/in/97fakhreddine/"
+  );
+  const goToLinkedin = () => {
+    window.open(linkedin, "__blank");
+  };
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-gradient">
@@ -15,19 +33,17 @@ const Nav: React.FC = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand">Welcome</a>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link">Contact Me</a>
+                <img src={logo} alt="logo..." className="logo" />
               </li>
             </ul>
-            <div className="d-flex"></div>
+            <div className="d-flex">
+              <i className="ui github icon" onClick={goToGithub}></i>
+              <i className="ui facebook icon" onClick={goToFacebook}></i>
+              <i className="ui linkedin icon" onClick={goToLinkedin}></i>
+            </div>
           </div>
         </div>
       </nav>

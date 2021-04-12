@@ -20,30 +20,46 @@ const Nav: React.FC = () => {
   };
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-gradient">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div className="container">
+          <a className="navbar-brand" href="#">
+            <h1>Welcome to My Portfolio</h1>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  Home
+                  <span className="sr-only">(current)</span>
+                </a>
+              </li>
               <li className="nav-item">
-                <img src={logo} alt="logo..." className="logo" />
+                <a className="nav-link" href="#">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Services
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Contact
+                </a>
               </li>
             </ul>
-            <div className="d-flex">
-              <i className="ui github icon" onClick={goToGithub}></i>
-              <i className="ui facebook icon" onClick={goToFacebook}></i>
-              <i className="ui linkedin icon" onClick={goToLinkedin}></i>
-            </div>
           </div>
         </div>
       </nav>

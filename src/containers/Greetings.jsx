@@ -14,6 +14,20 @@ const Greetings = () => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
   });
+
+  const downloadFile = (blob, fileName) => {
+    const link = document.createElement('a');
+    // create a blobURI pointing to our Blob
+    link.href = URL.createObjectURL(blob);
+    link.download = fileName;
+    // some browser needs the anchor to be in the doc
+    document.body.append(link);
+    link.click();
+    link.remove();
+    // in case the Blob uses a lot of memory
+    setTimeout(() => URL.revokeObjectURL(link.href), 7000);
+  };
+  
   return (
     <Fade top duration={1000} distance="40px">
       <main ref="main">
@@ -44,6 +58,7 @@ const Greetings = () => {
                         className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                         color="default"
                         href={greetings.resumeLink}
+                  
                       >
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-file" />

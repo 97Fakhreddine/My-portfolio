@@ -18,11 +18,8 @@ const ExperienceCard = ({ data }) => {
   const [colorArrays, setColorArrays] = useState([]);
   console.log(colorArrays);
   const imgRef = createRef();
-console.log(colorArrays)
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
-  }
+  console.log(colorArrays)
+
 
 
   return (
@@ -42,7 +39,7 @@ console.log(colorArrays)
               top
               src={data.companylogo}
               style={{ width: "100px" }}
-              onLoad={() => getColorArrays()}
+    
               alt=""
             />
             <CardTitle tag="h5">{data.role}</CardTitle>
@@ -51,8 +48,8 @@ console.log(colorArrays)
               {data.desc}
               <ul>
                 {data.descBullets
-                  ? data.descBullets.map((desc) => {
-                      return <li key={desc}>{desc}</li>;
+                  ? data.descBullets.map((desc,i) => {
+                      return <li key={desc + i + ''}>{desc}</li>;
                     })
                   : null}
               </ul>

@@ -14,11 +14,19 @@ const ProjectsCard = ({ data }) => {
               <div className="pl-4">
                 <h5 className="text-info">{data.name}</h5>
                 <p className="description mt-3">{data.desc}</p>
+                <img
+                        className="mb-3 img-center"
+                        top
+                        src={data.companylogo}
+                        style={{ width: "140px" ,height: "100px"}}
+                        // onLoad={() => getColorArrays()}
+                        alt=""
+                />
                 {data.link ? (
                   <Button
                     className="btn-neutral btn-icon"
                     color="primary"
-                    href={data.link.url}
+                    href={data.link}
                     target="_blank"
                   >
                     <span className="btn-inner--icon">
